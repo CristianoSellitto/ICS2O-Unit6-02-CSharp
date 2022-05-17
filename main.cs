@@ -13,7 +13,7 @@ class Program
         {
             File.WriteAllText("text.txt", "0");
         }
-        string fileText = File.ReadAllText("text.txt");;
+        string fileText = File.ReadAllText("text.txt");
         fileText = Convert.ToString(Convert.ToInt32(fileText) + 1);
         File.WriteAllText("text.txt", fileText);
         if (Convert.ToInt32(fileText) == 1)
